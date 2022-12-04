@@ -1,0 +1,64 @@
+/* 
+icon: <i class='bx bx-chevron-down'></i>;
+background:#1c1d24  #8c7ae6  #f3f3f3;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&family=Poppins&family=Roboto:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #1c1d24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.accordion{
+    width: 380px;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #8c7ae6;
+    padding: 10px;
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.header h1{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+.header i{
+    font-size: 30px;
+    color: white;
+}
+.text{
+    background-color:#f3f3f3 ;
+    width: 100%;
+    padding: 0px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.text p{
+    font-size: 14px;
+    line-height: 22px;
+}
+.active{
+    max-height: 260px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.icon i{
+    transform: rotate(180deg);
+}
